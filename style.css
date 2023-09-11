@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&family=Sora:wght@500;800&display=swap');
+
+body {
+  background-color: #22262c;
+  color: #f2feff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 20px;
+  margin-left: 30px;
+}
+
+h1 {
+  font-family: 'Sora', sans-serif;
+  font-weight: 800;
+  word-spacing: 3px;
+  
+} 
+#box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+
+}
+
+#box {
+  background-color: #383e4d;
+  padding: 14px 22px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 20px #070b16;
+}
+
+
+
+li {
+  
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+input, button {
+  font-family: 'Sora';
+  font-weight: 500;
+  
+  margin-bottom: 10px;
+  margin-top: 12px;
+  padding:  10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+}
+
+input {
+  display: block;
+  
+}
+
+#btn-container {
+  display: block;
+  user-select: none;
+}
+
+
+#delete-btn {
+  width: 128px;
+  border: 2px solid #8a98b6;
+  padding: 9px 18px;
+  background-color: transparent;
+  color: #e6e6e6;
+  margin-left: 3px;
+  letter-spacing: 1px;
+  width: 124px;
+}
+
+#delete-btn:hover {
+  border-color: #516897;
+  transition: border-color 300ms linear;
+}
+
+#delete-btn:active {
+  border-color: #4d5c79;
+}
+
+
+#add-btn {
+  width: 128px;
+  background-color: #8a98b6;
+  color: #faf8f8;
+  margin-right: 3px;
+  letter-spacing: 1px;
+}
+
+#add-btn:hover {
+  background-color: #516897;
+  transition: background-color 300ms linear;
+}
+
+#add-btn:active {
+  background-color: #4d5c79;
+}
+
+#warning {
+  font-size: 13px;
+  margin-top: 0;
+  color: #ff5555;
+  user-select: none;
+  cursor: pointer;
+}
+
+#attribution {
+  text-align: center;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Sora', sans-serif;
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.item {
+  color: #cddeff;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    text-align: center;
+  }
+
+  div {
+    width: 70%;
+    margin: 5px auto;
+  }
+
+  input {
+    margin: 5px auto;
+    margin-top: 0;
+  }
+
+  ol {
+    margin-top: 0;
+    display: inline-block;
+    text-align: left;
+    
+  }
+
+  #add-btn {
+    display: block;
+    width: 129px;
+    margin: 10px auto 2px auto;
+  }
+
+  #delete-btn {
+    width: 129px;
+    margin-left: 0;
+    display: block;
+    margin: 6px auto 2px auto;
+  }
+
+  #box {
+    width: 400px;
+  }
+
+  #box-container {
+    height: 90vh;
+  }
+}
+
+
+@media (prefers-color-scheme: light)  {
+  body {
+    background-color: #cfddf0;
+  }
+
+  #attribution {
+    color: #2b303a;
+  }
+
+  #box {
+    background-color: #e9effa;
+    box-shadow: 0px 2px 20px #8fa0c5;
+  }
+
+  h1 {
+    color: #2f3e4e;
+  }
+
+  .item {
+    color: #374463;
+  }
+
+  #delete-btn {
+    color: #4f5e7e;
+    border-color: #6a80af;
+  }
+
+  input {
+    background-color: #dbe3f8;
+    color: #4468c2;
+  }
+}
